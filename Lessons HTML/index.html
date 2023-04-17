@@ -11,7 +11,16 @@
         <title>Главная</title>
     </head> 
     <body>
-        
+        <!--Шапка-->
+        <header>Шапка</header><hr>
+        <main>Основная часть сайта</main>
+        <aside>Боковая часть</aside>
+        <footer>Низ сайта</footer>
+        <progress max="100" value="9"></progress><br>
+        <details>
+            <summary>Подробнее</summary>
+            Анекдот: заходят в бар...
+        </details>
         <a href="#bottom">Вниз</a><!-- ВАЖНО: якори -->
         <h1>Заголовок 1</h1>
         <h2>Заголовок 2</h2>
@@ -34,12 +43,38 @@
         <a href="about.html">переход в хтмл</a><br> <!--Новые страницы-->
         <a name="bottom"></a> <!-- ВАЖНО: якори -->
         <a href="mailto:grOuwi42@gmail.com">Почта</a><br>
+        <!--Форма-->
+        <form action="" method="post">
+            <label for="user_name">Введите</label> <!--for - с каким объектом работает label-->
+            <input type="text" placeholder="Text" value="dsdsd" maxlength="5" name="user_name" id="user_name"><br><br>
+            <label for="user_name">Пароль</label><input type="password" placeholder="password"><br><br>
+            <label for="user_name">Почта</label><input type="email" placeholder="email"><br><br>
+            <label for="user_name">URL</label><input type="url" placeholder="URL"><br><br>
+            <label for="user_name">Color</label><input type="color"><br>
+            <label for="user_name">Время и календарь</label><input type="datetime"><br><br>
+            <label for="user_name">Галочка</label><input type="checkbox"><br><br>
+            <label for="user_name">Радиокнопка</label><input type="radio" name="state"><input type="radio" name="state"><br><br>
+            <input type="range"><br><br>
+            <input type="file"><br><br>
+            <input type="button" value="Кнопка"><br><br>
+            <!-- <input type="submit"><br><br> -->
+            <input type="search"><br><br>
+            <input type="reset" value="Очистить"><br><br>  
+        </form><br> <!--name - указатель для js; id - указатель для css--> 
+        <textarea placeholder="Что-нибудь" maxlength="10">Просто текст</textarea><br><br>
+        <button type="button">Меню</button><br><br>
+        <!--Селектор выбора, выпадающий список-->
+        <select>
+            <option>1</option>
+            <option>2</option>
+            <option selected disabled>3</option>
+        </select><br><br>
         <!-- Картинка с интернета-->
        <img src="https://sportishka.com/uploads/posts/2022-11/1667561336_85-sportishka-com-p-samarskie-dostoprimechatelnosti-pinterest-86.jpg"
        width="640px" height="640px" title="Картиночка" alt="Городочек">
         <!-- Картинка с проекта-->
         <img src="img/Snowmen.jpg" alt="Снеговичок" width="640px" height="640px"><br>
-
+        
         <table border="1" width="500px">
             <thead><tr><!--Шапка таблицы и строка таблицы-->
                 <th>Имя</th> 
@@ -66,6 +101,8 @@
                 </tr>
             </tfoot>
         </table>
+        <div>Текст</div><!--Создание блоков--> 
+        <span>Текст спан</span> <!--Строка, не выделяется весь экран-->
     <!--Подключение файлов js. Где угодно, рекомендуется в конце body-->
     <script src="js/main.js"></script>  
     </body>
