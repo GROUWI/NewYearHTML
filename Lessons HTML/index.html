@@ -6,10 +6,12 @@
         <meta name = "author" content ="Громыч">
         <meta name = "deskription" content ="Тестовая страница">
         <meta name = "keywords" content ="тест">
-        <!-- ************************************** -->
+        <!--Подключение файлов cssю Только в head-->
+        <link rel="stylesheet" href="css/main.css">
         <title>Главная</title>
     </head> 
     <body>
+        
         <a href="#bottom">Вниз</a><!-- ВАЖНО: якори -->
         <h1>Заголовок 1</h1>
         <h2>Заголовок 2</h2>
@@ -31,6 +33,40 @@
         <a href="https://google.com" title="Жмяк" target="_blank">Google</a>
         <a href="about.html">переход в хтмл</a><br> <!--Новые страницы-->
         <a name="bottom"></a> <!-- ВАЖНО: якори -->
-        <a href="mailto:grOuwi42@gmail.com">Почта</a><!-- ВАЖНО: якори -->
+        <a href="mailto:grOuwi42@gmail.com">Почта</a><br>
+        <!-- Картинка с интернета-->
+       <img src="https://sportishka.com/uploads/posts/2022-11/1667561336_85-sportishka-com-p-samarskie-dostoprimechatelnosti-pinterest-86.jpg"
+       width="640px" height="640px" title="Картиночка" alt="Городочек">
+        <!-- Картинка с проекта-->
+        <img src="img/Snowmen.jpg" alt="Снеговичок" width="640px" height="640px"><br>
+
+        <table border="1" width="500px">
+            <thead><tr><!--Шапка таблицы и строка таблицы-->
+                <th>Имя</th> 
+                <th>Фамилия</th><!--Заголовок столбца-->
+            </tr></thead> 
+            <tbody align="center"> <!--Через CSS делается-->
+                <tr>
+                    <td>Артем</td>
+                    <td>Громов</td>
+                </tr>
+                <tr>
+                    <td>Артем 2</td>
+                    <td>Громов</td>
+                </tr>
+                <tr>
+                    <td>Артем 3</td>
+                    <td>Громов</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>Артем 43</td>
+                    <td>Громов</td>
+                </tr>
+            </tfoot>
+        </table>
+    <!--Подключение файлов js. Где угодно, рекомендуется в конце body-->
+    <script src="js/main.js"></script>  
     </body>
 </html>
